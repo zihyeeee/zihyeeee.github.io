@@ -30,10 +30,10 @@
         .point1{top: 3.5vw; left: 0vw; transform: rotate(-15deg);}
         .point2{top: 1vw; left: 27vw; animation: move2 3s ease-in infinite;}
         .point3{top: 12vw; left: 6vw;}
-        .point4{top: 9vw; right: 25vw; animation: move3 2s ease-out infinite;}
+        .point4{top: 11vw; right: 24vw; animation: move3 2s ease-out infinite;}
         .point5{top: -1vw; right: 2vw;}
-        .point6{top: 9vw; left: 19vw;}
-        .point7{top: 12vw; left: 42vw; transform: rotate(10deg); animation: move1 3s ease-in-out infinite;}
+        .point6{top: 9vw; left: 19vw; animation: move4 2s ease-out infinite;}
+        .point7{top: 3.6vw; left: 55vw; transform: rotate(10deg); animation: move1 3s ease-in-out infinite;}
         .point8{top: -0.5vw; left: 12vw; transform: rotate(68deg);}
         .point9{top: 0vw; right: 15vw; transform: rotate(15deg);}
         .point10{top: 9vw; right: 4vw; transform: rotate(-15deg);}
@@ -54,6 +54,12 @@
         @keyframes move3{
             0%{transform: rotate(0deg);}
             100%{transform: rotate(365deg);}
+        }
+        @keyframes move4{
+            0%{transform: rotate(0deg);}
+            40%{transform: rotate(-20deg);}
+            70%{transform: rotate(-25deg);}
+            100%{transform: rotate(0deg);}
         }
     </style>
 </head>
