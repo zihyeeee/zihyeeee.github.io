@@ -24,6 +24,7 @@ $(document).ready(function() {
     $(window).scroll(function() {
         let win_top = $(window).scrollTop();
         let section2_top = $('.section2').offset().top;
+        let section3_top = $('.section3').offset().top;
     
         // top bar
         if(win_top >= 10){
@@ -76,6 +77,11 @@ $(document).ready(function() {
                 'opacity':'1'
             }, 2900);
         }
+
+        // section vid
+        if(win_top >= section3_top-150 && !$('.vid video').attr('src')){
+            $('.vid video').attr('src','./image/hackers_vote_pj.mp4')
+        }
     });
 
     $('.bar_wrap li').mouseenter(function(){
@@ -86,18 +92,18 @@ $(document).ready(function() {
     })
 
     // mouse 이벤트
-    $('.section1 .contents_1').mouseenter(function(){
-        $(this).animate({left:'0'}, 1000);
-    })
-    $('.section1 .contents_1').mouseleave(function(){
-        $(this).animate({left:'-22.4%'},1000);
-    })
-    $('.section1 .contents_2').mouseenter(function(){
-        $(this).animate({right:'0'}, 1000);
-    })
-    $('.section1 .contents_2').mouseleave(function(){
-        $(this).animate({right:'-22.4%'},1000);
-    })
+    // $('.section1 .contents_1').mouseenter(function(){
+    //     $(this).animate({left:'0'}, 1000);
+    // })
+    // $('.section1 .contents_1').mouseleave(function(){
+    //     $(this).animate({left:'-22.4%'},1000);
+    // })
+    // $('.section1 .contents_2').mouseenter(function(){
+    //     $(this).animate({right:'0'}, 1000);
+    // })
+    // $('.section1 .contents_2').mouseleave(function(){
+    //     $(this).animate({right:'-22.4%'},1000);
+    // })
     
 });
 

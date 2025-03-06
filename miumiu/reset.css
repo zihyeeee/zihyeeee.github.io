@@ -48,8 +48,8 @@ a:focus, a:active, a:link {
     text-decoration: none; 
 }
 
-::-webkit-scrollbar {
-    width: 10px; /* 세로 스크롤바 너비 설정 */
+/* ::-webkit-scrollbar {
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -57,7 +57,7 @@ a:focus, a:active, a:link {
     background-color: #000;
     border-radius: 10px;
     border: 4px solid transparent;
-    box-shadow: inset 6px 6px 0 rgba(255, 255, 255, 0.2); /* 밝게 조정 */
+    box-shadow: inset 6px 6px 0 rgba(255, 255, 255, 0.2);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -68,7 +68,7 @@ a:focus, a:active, a:link {
 ::-webkit-scrollbar-track {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.2); /* 추가 */
-}
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+} */
 
 .pos_r{position: relative;}

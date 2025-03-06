@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackers-vote-system</title>
+
+    <link rel="stylesheet" href="./login.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="<?=$config['js_url'];?>/hackers2024.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                let win_top = $(window).scrollTop();
+                let main_top = $('.main_top').offset().top-500;
+    
+                if(win_top > main_top) {
+                    $('.info_box').addClass("up");
+                    $('.info_box ul').addClass("up");
+                }
+            })
+        })
+    
+        function lazy_move(obj) {
+            var $target = $(obj);
+    
+            $('html, body').stop().animate(
+                {
+                    scrollTop: $target.offset().top,
+                }, {
+                    duration: 1000,
+                    step: function (now, fx) {
+                        var newOffset = $target.offset().top;
+    
+                        if (fx.end !== newOffset)
+                            fx.end = newOffset;
+                    },
+                }
+            );
+        }
+
+    function login(){
+        let phone_num= $('input[name=user_mobile]').val().length
+        if(phone_num !== 11){
+            alert('핸드폰 번호를 입력하세요.');
+        } else {
+            alert('로그인 되었습니다.')
+            window.open('./')
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <div class="e_wrap pos_r">
+        <div class="main_top pos_r">
+            <img src="./img/hama.jpg" alt="HAMA">
+            <div class="scroll pos_r flex" onclick="lazy_move('.user_chk')">
+                <a class="t-c">
+                    <img src="./img/main_sys.png" alt="scroll">
+                </a>
+                <img src="./img/scroll.gif" alt="scroll">
+            </div>
+        </div>
+    
+        <div class="user_chk">
+            <img src="./img/hama_top.jpg" alt="HAMA">
+            <div class="user_box">
+                <div class="info_box">
+                    <h2>본인인증을 위해</h2>
+                    <h2>휴대폰 번호를 입력해 주세요.</h2>
+                    <ul>
+                        <li>정확하게 입력해야 투표 참여가 가능합니다.</li>
+                        <li>(인트라넷 정보 기준)</li>
+                        <li>중복투표를 방지하기 위해 휴대폰 번호를 수집합니다.</li>
+                        <li>수집된 휴대폰 번호는 송년회 종료 후 파기됩니다.</li>
+                    </ul>
+                </div>
+                <div class="phone_num">
+                    <p>휴대폰번호</p>
+                    <input type="text" name="user_mobile" maxlength="11" placeholder="01012345678">
+                    <button class="submit_btn" onclick="login()">
+                        <div>입장하기</div> 
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+

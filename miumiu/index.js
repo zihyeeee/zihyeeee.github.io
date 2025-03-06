@@ -9,7 +9,8 @@ $(document).ready(function() {
     $('.gnb_button').on("click", function(){
         stop_move = false;
         $('.main_img').css('width','0');
-        $('.gnb_img').css('width','8%');
+        $('.gnb_img').css('width','80%');
+        $('.gnb_img img').css('width','140px');
     })
 
     $('.close_btn').on('click', function(){
@@ -27,16 +28,22 @@ $(document).ready(function() {
                 'margin':'0'
             },800)
             $('.gnb_img').animate({
+                'width':'80%'
+            },1000)
+            $('.gnb_img > img').animate({
                 'width':'140px'
             },1000)
         } else if (win_top <= 100 && $('.main_img').hasClass('animated') && stop_move) {
             $('.main_img').removeClass('animated');
             $('.main_img').animate({
                 'width':'80%',
-                'margin-top':'-20px'
+                'margin-top':'-1.2%'
             },800)
+            $('.gnb_img > img').animate({
+                'width':'0'
+            },1000)
             $('.gnb_img').animate({
-                'width':'0%'
+                'width':'0'
             },1000)
         }
 
@@ -47,10 +54,30 @@ $(document).ready(function() {
         }
     })
 
-    $('.menu_tab').click(function(){
-        $('.mini_menu')
-        $(this).next().slideToggle();
-    })
+    /* lnb max-width: 1088px */
+        $('.mini_menu').hide();
+        
+        $('.menu_tab').click(function(){
+            $('.mini_menu').not($(this).next()).slideUp();
+            $(this).next().slideToggle();
+        });
+
+        let miniGnbBtn = true
+        $('.menu_wrap > button').click(function(){
+            if(miniGnbBtn){
+                $(this).next().show();
+                $(this).text('×')
+                $(this).css('font-size','26px')
+                miniGnbBtn = false;
+            } else {
+                $(this).next().hide();
+                $(this).text('MENU')
+                $(this).css('font-size','14px')
+                miniGnbBtn = true;
+                $('.mini_menu').hide();
+            }
+        })
+    // -------------------------------
 
     // section slider
     $('.ticker ul').bxSlider(

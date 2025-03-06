@@ -3,375 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WEBDESIGNCOMPANY</title>
 
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css">
-    <script type="text/javascript" src="index.js"></script>
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-    <!-- bx-slider -->
-    <script src="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
 
-    <script>
-        var swiper = new Swiper(".swiper-container", {
-            navigation: {
-            nextEl: ".swiper-button-next", 
-            prevEl:".swiper-button-prev",
-            },
-        })
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js" defer></script>
 </head>
 
-
 <body>
-    <header id="header">
-        <div class="issue">
-            <a href=""><p>2023 YONEX TENNIS COLLECTION <span>런칭</span>></p></a>
-        </div>
-    
-        <div class="gnb_wrap">
-            <a href="#"><img src="https://www.yonexmall.com/images/site/logo.jpg" alt=""></a>
-            <div class="gnb">
-                <ul>
-                    <li class="deth1"><span>STORE</span>
-                        <ul class="">
-                            <li class="deth2"><span>Tennis COLLECTION</span>
-                                <ul>
-                                    <li class="deth3">Story</li>
-                                    <li class="deth3">Shop</li>
-                                    <li class="deth3">LookBook</li>
-                                    <li><img src="https://www.yonexmall.com/images/TennisCollection/YT_vol4.jpg" width="250px" alt=""></li>
-                                </ul>
-                            </li>
-                            <li class="deth2"><span>Badminton</span>
-                                <ul>
-                                    <li class="deth3">전체보기</li>
-                                    <li class="deth3">신상품</li>
-                                    <li class="deth3">라켓</li>
-                                    <li class="deth3">신발</li>
-                                </ul>
-                            </li>
-                            <li class="deth2"><span>Tennis</span>
-                                <ul>
-                                    <li class="deth3">전체보기</li>
-                                    <li class="deth3">신상품</li>
-                                    <li class="deth3">라켓</li>
-                                    <li class="deth3">신발</li>
-                                </ul>
-                            </li>
-                            <li class="deth2"><span>Golf</span>
-                                <ul>
-                                    <li class="deth3">전체보기</li>
-                                    <li class="deth3">드리이버</li>
-                                    <li class="deth3">아이언</li>
-                                    <li class="deth3">풀세트</li>
-                                    <li class="deth3">풀악세서리</li>
-                                </ul>
-                            </li>
-                            <li class="deth2"><span>Wears</span>
-                                <ul>
-                                    <li class="deth3">전체보기</li>
-                                    <li class="deth3">신상품</li>
-                                    <li class="deth3">라켓</li>
-                                    <li class="deth3">신발</li>
-                                    <li class="deth3">긴바지</li>
-                                    <li class="deth3">반바지</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-    
-                    <li class="deth1"><span>BRAND</span>
-                        <ul>
-                            <li class="deth2"><span>Yonex 브랜드 소개</span>
-                                <ul>
-                                    <li class="deth3">브랜드소개</li>
-                                </ul>
-                            </li>
-                            <li class="deth2"><span>Yonex Korea 소개</span>
-                                <ul>
-                                    <li class="deth3">Story</li>
-                                    <li class="deth3">Shop</li>
-                                    <li class="deth3">LookBook</li>
-                                </ul>
-                            </li>
-                            <li class="deth2"><span>인재채용</span>
-                                <ul>
-                                    <li class="deth3">채용안내</li>
-                                    <li class="deth3">채용공고</li>
-                                </ul>
-                            </li>
-                            <li class="deth2"><span>News</span>
-                                <ul>
-                                    <li class="deth3">요넥스소식</li>
-                                    <li class="deth3">공지사항</li>
-                                    <li class="deth3">보도자료</li>
-                                </ul>
-                            </li>
-                            <li class="deth2"><span>후원선수</span>
-                                <ul>
-                                    <li class="deth3">Story</li>
-                                    <li class="deth3">Shop</li>
-                                    <li class="deth3">LookBook</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-    
-                    <li class="deth1"><span>EVENT</span>
-                        <ul>
-                            <li class="deth2"><span>기획전</span>
-                                <ul>
-                                    <li class="deth3">Story</li>
-                                    <li class="deth3">Shop</li>
-                                    <li class="deth3">LookBook</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-    
-                    <li class="deth1"><span>CUSTOMER</span>
-                        <ul>
-                            <li class="deth2"><span>Tennis COLLECTION</span>
-                                <ul>
-                                    <li class="deth3">Story</li>
-                                    <li class="deth3">Shop</li>
-                                    <li class="deth3">LookBook</li>
-                                </ul>
-                            </li>
-                            <li class="deth2"><span>Badminton</span>
-                                <ul>
-                                    <li class="deth3">Story</li>
-                                    <li class="deth3">Shop</li>
-                                    <li class="deth3">LookBook</li>
-                                </ul>
-                            </li>
-                            <li class="deth2"><span>Tennis</span>
-                                <ul>
-                                    <li class="deth3">Story</li>
-                                    <li class="deth3">Shop</li>
-                                    <li class="deth3">LookBook</li>
-                                </ul>
-                            </li>
-                            <li class="deth2"><span>Golf</span>
-                                <ul>
-                                    <li class="deth3">Story</li>
-                                    <li class="deth3">Shop</li>
-                                    <li class="deth3">LookBook</li>
-                                </ul>
-                            </li>
-                            <li class="deth2"><span>Wears</span>
-                                <ul>
-                                    <li class="deth3">Story</li>
-                                    <li class="deth3">Shop</li>
-                                    <li class="deth3">LookBook</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-    
-                    <li class="deth1"><span>E-CATALOGUE</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="user">
-                <ul>
-                    <li><a href="#">A/S조회</a></li>
-                    <li><a href="#">주문배송</a></li>
-                    <li><a href="#" class="sign_btn">회원가입</a></li>
-                    <li><a href="#">로그인</a></li>
-                </ul>
-    
-                <div class="search_wrap">
-                    <input type="text" name="">
-                    <span class="remove">검색</span>
-                    <a href="javascript:"><img src="https://www.yonexmall.com/shop/data/skin/standard_C/img/icon/top_menu_ico02_black.png" alt=""></a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="content po_r">
-        <div class="main_pam">
-            <div class="swiper-container po_r" >
-                <ul class="swiper-wrapper"> 
-                    <li class="swiper-slide" data-swiper-slide-index="0"><img src="./img/main01.png" alt=""></li>
-                    <li class="swiper-slide" data-swiper-slide-index="1"><img src="./img/main02.png" alt=""></li>
-                    <li class="swiper-slide" data-swiper-slide-index="2"><img src="./img/main03.png" alt=""></li>
-                    <li class="swiper-slide" data-swiper-slide-index="3"><video src="https://www.yonexmall.com///images/videos/1015_YT_Q4_EP7_FINAL.mp4" muted controls loop autoplay playsinline webkit-playsinline></video></li>
-                    <li class="swiper-slide" data-swiper-slide-index="4"><img src="./img/main04.png" alt=""></li>
-                    <li class="swiper-slide" data-swiper-slide-index="5"><img src="./img/main05.png" alt=""></li>
-                    <li class="swiper-slide" data-swiper-slide-index="6"><img src="./img/main06.png" alt=""></li>
-                    <li class="swiper-slide" data-swiper-slide-index="7"><img src="./img/main07.png" alt=""></li>
-                    <li class="swiper-slide" data-swiper-slide-index="8"><img src="./img/main08.png" alt=""></li>
-                    <li class="swiper-slide" data-swiper-slide-index="9"><video src="https://www.yonexmall.com/images/videos/1015_YT_Q4_EP8_FINAL.mp4" muted controls loop autoplay playsinline webkit-playsinline></video></li>
-                </ul>
-
-                <div class="swiper-button swiper-button-next"></div>
-                <div class="swiper-button swiper-button-prev"></div>
-            </div>
-        </div>
-
-        <div class="con01">
-            <div class="con01_tit">
-                <p>YONEX KOREA</p>
-                <div class="con01_deco">
-                    <div class="con01_deco1"></div>
-                    <div class="con01_deco2"></div>
-                </div>
-                <p class="sub_tit">요넥스의 다양한 상품들을 만나보세요</p>
-                <ul>
-                    <li>
-                        <a href="javsscript:"><img src="https://www.yonexmall.com/images/banner/icon_badminton.png" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="javsscript:"><img src="https://www.yonexmall.com/images/banner/icon_tennis.png" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="javsscript:"><img src="https://www.yonexmall.com/images/banner/icon_golf.png" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="javsscript:"><img src="https://www.yonexmall.com/images/banner/icon_wears.png" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="javsscript:"><img src="https://www.yonexmall.com/images/banner/icon_bag_acc.png" alt=""></a>
-                    </li>
-                </ul>
-                <a class="bot_cont" href="javsscript:"><img class="bot_img" src="https://www.yonexmall.com/images/banner/icon_korea_team.jpg" alt=""></a>
-            </div>
-        </div>
-
-        <div class="con02">
-            <div class="con02_wrap">
-                <p>MD's PICK</p>
-                <div class="bxslider-default" data-auto="true" data-pager="true" data-controls="true">
-                    <ul class="bxslider">
-                        <li>
-                            <div class="item_box">
-                                <span>NEW</span>
-                                <img src="https://www.yonexmall.com/shop/data/goods/170624407261i0.png" alt="">
-                                <a href="javascript:" class="item_info">241TS025M (남성) </br>권장소비가 대비</br>65,000</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item_box">
-                                <span>NEW</span>
-                                <img src="https://www.yonexmall.com/shop/data/goods/1706244165141s0.png" alt="">
-                                <a href="javascript:" class="item_info">241TS025M (여성) </br>권장소비가 대비</br>65,000</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item_box">
-                                <span>NEW</span>
-                                <img src="https://www.yonexmall.com/shop/data/goods/1706767909188i0.png" alt="">
-                                <a href="javascript:" class="item_info">241TS025M (남여공용) </br>권장소비가 대비</br>65,000</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item_box">
-                                <span>NEW</span>
-                                <img src="https://www.yonexmall.com/shop/data/goods/1705020031324s0.png" alt="">
-                                <a href="javascript:" class="item_info">EZONE 100 (2024 AQNBK) </br>권장소비가 대비</br>65,000</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item_box">
-                                <span>NEW</span>
-                                <img src="https://www.yonexmall.com/shop/data/goods/1704849467922s0.png" alt="">
-                                <a href="javascript:" class="item_info">SHT-LU3EX (LUMIO 3/2023) </br>권장소비가 대비</br>65,000</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item_box">
-                                <span>NEW</span>
-                                <img src="https://www.yonexmall.com/shop/data/goods/1706768294186i0.png" alt="">
-                                <a href="javascript:" class="item_info">241TS025M (남여공용) </br>권장소비가 대비</br>65,000</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="con03 po_r">
+    <header class="tit_wrap">
+        <a href="#">
+            <h1 class="main_tit">WEBDESIGNCOMPANY.</h1>
+        </a>
+        <div class="bar_wrap">
             <ul>
-                <li class="po_r">
-                    <a href="javascript:" class="tab on" onclick="vid_play('1','https://www.yonexmall.com/images/videos/2024_yonexkorea.mp4')">Promotion</a>
-                    <div class="wrap wrap1 on">
-                        <img src="/img/video1.png" alt="">
-                        <img class="paly_btn" src="./img/play_btn.png" alt="">
-                        <video src="https://www.yonexmall.com/images/videos/2024_yonexkorea.mp4" title="2024 Yonex Korea Promotion Video"  aria-label="2024 Yonex Korea Promotion Video"controls muted autoplay playsinline loop>
-                        </video>
-                    </div>
+                <li>
+                    <a href="javascript:" onclick="lazy_move('body')">
+                        <span></span>
+                        <p class="tab_name">MIUMIU</p>
+                    </a>
                 </li>
-                <li class="po_r">
-                    <a href="javascript:" class="tab" onclick="vid_play('2','https://www.yonexmall.com/images/videos/1015_YT_Q4_EP7_FINAL.mp4')">New Items</a>
-                    <div class="wrap wrap2">
-                        <img src="./img/video2.png" alt="">
-                        <img class="paly_btn" src="./img/play_btn.png" alt="">
-                        <video src="https://www.yonexmall.com/images/videos/1015_YT_Q4_EP7_FINAL.mp4" title="Yonex New Items Video"  aria-label="Yonex New Items Video"controls muted autoplay playsinline loop>
-                        </video>
-                    </div>
+                <li>
+                    <a href="javascript:" onclick="lazy_move('.section2')">
+                        <span></span>
+                        <p class="tab_name">YONEX</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:" onclick="lazy_move('.section3')">
+                        <span></span>
+                        <p class="tab_name">HACKERS</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:" onclick="lazy_move('.section4')">
+                        <span></span>
+                        <p class="tab_name">Olive Young</p>
+                    </a>
                 </li>
             </ul>
         </div>
-    </div>
 
-    <footer>
-        <div class="footer_wrap">
-            <div class="img_wrap">
-                <img src="https://www.yonexmall.com/images/site/logo-white.png" alt="">
-                <img src="https://www.yonexmall.com/images/site/ccm_2022_mo.png" alt="">
+        <a class="lnb_wrap" href="javascript:" alt="lnb열기">
+            <div>lnb</div>
+        </a>
+    </header> 
+
+    <div class="main_wrap">
+        <section class="section1 pos_r">
+            <div class="sec_img_wrap">
+                <img class="mainImg" src="./image/section1_main1.jpg" alt="">
+                <img class="mainImg_tit" src="./image/miumiu_tit.png" alt="">
             </div>
-            <div class="font_wrap">
-                <ul>
-                    <li><a href="javascript:">이용약관</a></li>
-                    <li><a href="javascript:">개인정보처리방침</a></li>
-                    <li><a href="javascript:">사업자정보확인</a></li>
-                </ul>
-                <p>(주)동승통상  서울특별시 마포구 포은로 120 덕일빌딩  대표이사 : 김철웅  사업자등록번호 : 105-81-04692  통신판매신고 : 제 2010-서울마포-0794호</p>
-                <p>개인정보보호책임자 : 강희국 상무  담당자 E-mail : webmaster@yonex.co.kr</p>
+
+            <div class="contents_wrap">
+                <div class="contents_1">
+                    <p>반응형으로 제작된 브랜드 페이지 입니다.</p>
+                    <button><a href="./miumiu/index.html">페이지 확인하기 ></a></button>
+                </div>
+                <!-- <a class="page1_img1" href="./miumiu/index.html">
+                    <img src="./image/page1_img1.png" alt="">
+                </a> -->
+                <!-- 
+                
+                <a href="./miumiu/index.html">
+                    <div class="contents_1">
+                        <div class="inn_contents1">
+                        </div>
+                        <div class="inn_contents2">
+                            <img src="./image/page1_img2.png" alt="">
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./miumiu/index.html">
+                    <div class="contents_2">
+                        <div class="inn_contents2">
+                            <img src="./image/page1_img3.png" alt="">
+                        </div>
+                        <div class="inn_contents1"></div>
+                    </div>
+                </a> -->
             </div>
-        </div>
-    </footer>
-
-    <!-- sign pop -->
-     <div class="sign_wrap">
-        <div class="bg"></div>
-        <div class="sign">
-            <img src="https://www.yonexmall.com/images/site/logo.jpg" alt="">
-            <p>회원가입</p>
-            <a href="javascript:" class="close">닫기</a>
-
-            <div class="agree_wrap">
-                <input type="checkbox" id="agree_all"><label for="agree_all" class="agree_all">모두 동의합니다.</label>
-                <input type="checkbox" id="agree_ck1" class="agree_ck"><label for="agree_ck1">개인정보 약관에 동의합니다.</label>
-                <input type="checkbox" id="agree_ck2" class="agree_ck"><label for="agree_ck2">SNS 광고 전송에 동의합니다.</label>
-                <div class="agree_box">
-                    제1조 (목적)</br>
-                    이 약관은 ㈜동승통상이 운영하는 인터넷 온라인쇼핑몰 (http://www.yonexmall.com) (이하 "몰"이라 함)에서 제공하는 인터넷 관련 서비스(이하 "서비스"라 함)를 이용함에 있어 사이버몰과 이용자의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.</br></br>
-
-                    제2조 (정의)</br>
-                    ① "몰"이란 ㈜동승통상 재화 또는 용역을 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 재화 또는 용역을 거래할 수 있도록 설정한 가상의 매장을 말하며, 아울러 사이버몰을 운영하는 사업자의 의미로도 사용합니다.</br>
-                    ② "이용자"란 "몰"에 접속하여 이 약관에 따라 "몰"이 제공하는 서비스를 받는 회원 및 비회원을 말합니다.</br>
-                    ③ '회원'이라 함은 "몰"에 개인 및 기업(법인)정보를 제공하여 회원등록을 한 자로서, "몰"의 정보를 지속적으로 제공받으며, "몰"이 제공하는 서비스를 계속적으로 이용할 수 있는 자를 말합니다.</br>
-                    ④ '비회원'이라 함은 회원에 가입하지 않고 "몰"이 제공하는 서비스를 이용하는 자를 말합니다.</br>
-                    ⑤ 회원은 회사가 회원으로 적합하다고 인정하는 일반 개인으로서 본 약관에 동의하고 회사의 회원가입양식을 작성하고 아이디/패스워드를 발급받은 자를 말합니다.</br></br>
-
-                    제3조 (약관의 명시와 개정)</br>
-                    ① "몰"은 이 약관의 내용과 상호, 영업소 소재지, 대표자의 성명, 사업자 등록번호, 연락처(전화, 팩스, 전자우편 주소 등) 등을 이용자가 알 수 있도록 ㈜동승통상 요넥스코리아의 온라인 홈페이지 초기 서비스화면(전면)에 게시합니다. 다만, 약관의 내용은 이용자가 연결화면을 통하여 볼 수 있도록 할 수 있습니다.</br>
-                    ② "몰"은 이용자가 약관에 동의하기에 앞서 약관에 정하여져 있는 내용 중 청약철회, 배송책임, 환불조건 등과 같은 중요한 내용을 이용자가 이해할 수 있도록 별도의 연결화면 또는 팝업화면 등을 제공하여 이용자의 확인을 구하여야 합니다.</br>
-                    ③ 본 약관은 약관의 규제 등에 관한 법률, 전자거래기본법, 전자서명법, 정보통신망 이용촉진 등에 관한 법률, 방문판매 등에 관한 법률, 소비자보호법 등 관련법을 위배하지 않는 범위에서 개정할 수 있습니다.
+        </section>
+    
+        <section class="section2 pos_r">
+            <div class="page_wrap">
+                <a href="./pu/index.html">
+                    <img class="1" src="./image/page2_img2.png" alt="">
+                </a>
+            </div>
+            <div class="contents_wrap">
+                <div class="contents_1"></div>
+                <div class="contents_2"></div>
+                <div class="contents_3">
+                    <img class="1" src="./image/page2_img3.png" alt="">
                 </div>
             </div>
-
-            <input type="submit" name="sign_btn_c" id="sign_btn_c"><label for="sign_btn_c" class="sign_btn_c">회원가입하기</label>
-        </div>
-     </div>
+            <img class="page2_img1" src="./image/page2_img1.png" alt="">
+        </section>
     
+        <section class="section3 pos_r">
+            <div class="vid_wrap pos_r">
+                <img class="page3_img1" src="./image/phone.png" alt="">
+                <div class="vid">
+                    <video src="./image/hackers_vote_pj.mp4" muted autoplay controls loop></video>
+                </div>
+            </div>
+            <div class="sec_inner">
+                <p class="sec3_tit">HACKERS VOTE SYSYEM</p>
+                <div>
+                    <p><a href="#">LOGIN PAGE</a></p>
+                </div>
+                <div>
+                    <p><a href="#">MAIN PAGE</a></p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="section4 pos_r"></section>
+    </div>
 </body>
 </html>
