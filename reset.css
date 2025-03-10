@@ -31,6 +31,9 @@ table {
 
 button {
     cursor:pointer;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 a { 

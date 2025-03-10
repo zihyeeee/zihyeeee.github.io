@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    // gnb 동그라미 애니메이션
     $('.bar_wrap li:nth-child(1) span').animate({
         'opacity': '0.6',
         'margin-top': '0'
@@ -42,14 +43,16 @@ $(document).ready(function() {
         }
 
         // 메인 타이틀 컬러 변경
-        if(win_top >= 1800 && win_top < 2740){
+        if(win_top >= 1800 && win_top < 2700){
             $('.main_tit').css('color','#fff');
             $('.tab_name').css('color','#fff');
             $('a.lnb_wrap div').css('background-color','#fff');
+            $('.lnb_wrap img').attr('src','./image/user2.png')
         } else {
             $('.main_tit').css('color','#000');
             $('.tab_name').css('color','#000');
             $('a.lnb_wrap div').css('background-color','#000');
+            $('.lnb_wrap img').attr('src','./image/user.png')
         }
 
         // page2
