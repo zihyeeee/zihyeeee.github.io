@@ -98,7 +98,7 @@ function global_close() {
 }
 
 function remove() {
-    $('.global_wrap').animate({'right':'-26%'},400);
+    $('.global_wrap').animate({'right':'-50%'},400);
     setTimeout(global_close, 440);
 }
 // 
