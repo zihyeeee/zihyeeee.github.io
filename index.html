@@ -10,6 +10,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="main.js" defer></script>
+
+    <!-- bx-slider -->
+    <script src="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 </head>
 
 <body>
@@ -40,7 +44,7 @@
                 <li>
                     <a href="javascript:" onclick="lazy_move('.section4')">
                         <span></span>
-                        <p class="tab_name">Olive Young</p>
+                        <p class="tab_name">OliveYoung</p>
                     </a>
                 </li>
             </ul>
@@ -60,7 +64,8 @@
 
             <div class="contents_wrap">
                 <div class="contents_1">
-                    <p>반응형으로 제작된 브랜드 페이지 입니다.</p>
+                    <h3>반응형으로 제작된 브랜드 페이지 입니다</h3>
+                    <p>상단바 애니매이션, 국가별 언어선택 lnb, 영상 팝업창 등을 구현하였습니다</p>
                     <button><a href="./miumiu/index.html">페이지 확인하기 ></a></button>
                 </div>
                 <div class="img_wrap">
@@ -74,18 +79,53 @@
         </section>
     
         <section class="section2 pos_r">
+            <div class="sd_box ticker">
+                <div class="bxslider">
+                    <ul>
+                        <li><img class="1" src="./image/yonex_tit.jpg" alt=""></li>
+                        <li><img class="1" src="./image/yonex_tit.jpg" alt=""></li>
+                        <li><img class="1" src="./image/yonex_tit.jpg" alt=""></li>
+                        <li><img class="1" src="./image/yonex_tit.jpg" alt=""></li>
+                        <li><img class="1" src="./image/yonex_tit.jpg" alt=""></li>
+                        <li><img class="1" src="./image/yonex_tit.jpg" alt=""></li>
+                        <li><img class="1" src="./image/yonex_tit.jpg" alt=""></li>
+                        <li><img class="1" src="./image/yonex_tit.jpg" alt=""></li>
+                        <li><img class="1" src="./image/yonex_tit.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
             <div class="page_wrap">
                 <a href="./pu/index.html">
                     <img class="1" src="./image/page2_img2.png" alt="">
                 </a>
             </div>
             <div class="contents_wrap">
-                <div class="contents_1"></div>
-                <div class="contents_2"></div>
+                <div class="contents_1">
+                    <h3>PC 전용으로 제작된 브랜드 페이지 입니다</h3>
+                </div>
+                <div class="contents_2">
+                    <p>회원가입 창, bx-slider를 이용한 슬라이드단, 영상 탭단 등을 구현하였습니다</p>
+                </div>
                 <div class="contents_3">
+                    <button><a href="./pu/index.html">페이지 확인하기 ></a></button>
                 </div>
             </div>
             <img class="page2_img1" src="./image/page2_img1.png" alt="">
+            <div class="sd_box sd_box2 ticker">
+                <div class="bxslider">
+                    <ul>
+                        <li><img class="1" src="./image/yonex_tit.jpg" alt=""></li>
+                        <li><img class="1" src="./image/yonex_tit.jpg" alt=""></li>
+                        <li><img class="1" src="./image/yonex_tit.jpg" alt=""></li>
+                        <li><img class="1" src="./image/yonex_tit.jpg" alt=""></li>
+                        <li><img class="1" src="./image/yonex_tit.jpg" alt=""></li>
+                        <li><img class="1" src="./image/yonex_tit.jpg" alt=""></li>
+                        <li><img class="1" src="./image/yonex_tit.jpg" alt=""></li>
+                        <li><img class="1" src="./image/yonex_tit.jpg" alt=""></li>
+                        <li><img class="1" src="./image/yonex_tit.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
         </section>
     
         <section class="section3 pos_r">
@@ -97,7 +137,8 @@
             </div>
             <div class="sec_inner">
                 <p class="sec3_tit">HACKERS VOTE SYSYEM</p>
-                <p>모바일 전용으로 제작된 페이지 입니다.</p>
+                <h3>Moblie 전용으로 제작된 페이지 입니다</h3>
+                <p>사내 송년회 행사를 위해 백앤드 개발팀과 함께 투표 시스템 프로젝트를 진행했습니다</br>*퍼블기여도 100%</p>
                 <div>
                     <p><a href="./hackers/login.html">LOGIN PAGE ></a></p>
                     <p><a href="./hackers/home.html">MAIN PAGE ></a></p>
@@ -106,8 +147,22 @@
         </section>
     
         <section class="section4 pos_r">
-            <div>
-                <a href="./oliveyoung/index.html">click!</a>
+            <a href="./oliveyoung/index.html"><img src="./image/oliveyoung_tit.png" alt=""></a>
+            <div class="con_wrap">
+                <div class="contents_1 pos_r">
+                    <div>
+                        <p>React로 제작한 페이지 입니다</p>
+                    </div>
+                    <div class="vid_wrap">
+                        <iframe data-preserve-html-node="true" src="https://player.vimeo.com/video/891296420?background=1&amp;autoplay=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="width:207%;height:137%;" title="OLIVE YOUNG GRAPHIC" data-ready="true"></iframe>
+                    </div>
+                    <div>
+                        <button><a href="./oliveyoung/index.html">페이지 확인하기 ></a></button>
+                    </div>
+                </div>
+                <div class="contents_2">
+                    <a href="./oliveyoung/index.html"><img src="./image/oliveyoung_main_img.png" alt=""></a>
+                </div>
             </div>
         </section>
     </div>

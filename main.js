@@ -1,4 +1,6 @@
+let page2Move = true; 
 $(document).ready(function() {
+
     // gnb 동그라미 애니메이션
     $('.bar_wrap li:nth-child(1) span').animate({
         'opacity': '0.6',
@@ -26,6 +28,7 @@ $(document).ready(function() {
         let win_top = $(window).scrollTop();
         let section2_top = $('.section2').offset().top;
         let section3_top = $('.section3').offset().top;
+        let section4_top = $('.section4').offset().top;
     
         // top bar
         if(win_top >= 10){
@@ -56,29 +59,36 @@ $(document).ready(function() {
         }
 
         // page2
-        if(win_top >= section2_top-180){
-            $('.page2_img1').animate({
-                'left': '0',
+        if(win_top >= section2_top-200 && page2Move){
+            $('.page2_img1').stop(true, true).animate({
+                'left': '3%',
                 'opacity':'1',
             }, 800);
 
-            $('.section2 .page_wrap').animate({
-                'top': '0',
+            $('.section2 .page_wrap').stop(true, true).animate({
+                'top': '7.4%',
                 'opacity':'1',
             }, 1200);
 
-            $('.section2 .contents_1').animate({
-                'top': '6%',
+            $('.section2 .contents_1').stop(true, true).animate({
+                'top': '44%',
                 'opacity':'1'
             }, 1600);
-            $('.section2 .contents_2').animate({
-                'top': '37%',
+            $('.section2 .contents_2').stop(true, true).animate({
+                'top': '49%',
+                'opacity':'1'
+            }, 2000);
+            $('.section2 .contents_3').stop(true, true).animate({
+                'top': '56%',
                 'opacity':'1'
             }, 2400);
-            $('.section2 .contents_3').animate({
-                'top': '68%',
-                'opacity':'1'
-            }, 2900);
+            page2Move = false;
+        }
+
+        // page4
+        if(win_top >= section4_top-180){
+            $('.contents_2 a').addClass('on');
+            $('.contents_1 > div').addClass('on');
         }
 
         // section vid
@@ -108,6 +118,9 @@ $(document).ready(function() {
     //     $(this).animate({right:'-22.4%'},1000);
     // })
     
+    var _ticker = $('.sd_box.ticker ul').bxSlider(
+        {speed: 26000, maxSlides:8, slideMargin:0, ticker:true, tickerHover:false, slideWidth: 300}
+    );
 });
 
 function lazy_move(obj){
@@ -128,15 +141,28 @@ function lazy_move(obj){
     );
 }
 
-// const section = document.querySelector('section')
+window.onload=function(){
+    // page1
+        $('.img_wrap .subImg:nth-child(1)').animate({
+            'top': '20%',
+            'opacity':'1',
+        }, 1000);
 
-// section.addEventListener('scrollend', (e)=> {
-//     const tit_wrap = document.querySelector('.tit_wrap')
-//     const scrollPosition = tit_wrap.scrollTop;
+        $('.img_wrap .subImg:nth-child(2)').animate({
+            'top': '20%',
+            'opacity':'1',
+        }, 1100);
 
-//     const titWrap = document.querySelector('.tit_wrap');
-//     titWrap.style.position = scrollPosition > 10 ? 'fixed' : 'relative';
-//     titWrap.style.top = '0';
-//     titWrap.style.left = '0';
-
-// })
+        $('.img_wrap .subImg:nth-child(3)').animate({
+            'top': '50%',
+            'opacity':'1'
+        }, 1400);
+        $('.img_wrap .subImg:nth-child(4)').animate({
+            'top': '50%',
+            'opacity':'1'
+        }, 2200);
+        $('.img_wrap .subImg:nth-child(5)').animate({
+            'top': '50%',
+            'opacity':'1'
+        }, 2600);
+}
